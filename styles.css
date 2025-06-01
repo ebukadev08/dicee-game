@@ -1,5 +1,6 @@
 .container {
-  width: 70%;
+  width: 90%;
+  max-width: 900px;
   margin: auto;
   text-align: center;
 }
@@ -15,10 +16,10 @@ body {
 }
 
 h1 {
-  margin: 30px;
+  margin-left: -100px;
   font-family: 'Lobster', cursive;
   text-shadow: 5px 0 #232931;
-  font-size: 8rem;
+  font-size: 3rem;
   color: #4ECCA3;
 }
 
@@ -28,8 +29,9 @@ p {
   font-family: 'Indie Flower', cursive;
 }
 
-img {
-  width: 80%;
+.dice img {
+  width: 120px;
+  max-width: 100%;
 }
 
 footer {
@@ -39,3 +41,28 @@ footer {
   font-family: 'Indie Flower', cursive;
 
 }
+
+#rollButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  justify-items: center;
+  transition: background-color 0.3s ease;
+}
+
+#rollButton:hover {
+  background-color: #45a049;
+}
+
+@media (min-width: 768px) {
+  .dice-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
